@@ -35,6 +35,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Favicon Link -->
 	<link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Fq-53xpRJaEeLuihT");
+   })();
+</script>
+<script src="index.js"></script>
 </head>
 
 <body>
@@ -379,7 +388,7 @@
 							<div class="prt_contact_form">
 								<div class="row">
 									<div class="prt_contact_info"><div class="col-12">
-										<form onsubmit="sendEmail(); reset(); return false">
+										<form>
 											<h1>CONTACT ME:</h1>
 											<p>For hiring or other inquires, fill out the form below.</p>
 											<br>
@@ -387,7 +396,7 @@
 											<input type="email" id="email" placeholder="Your Email" required>
 											<textarea id="message" placeholder="Your Message" rows="4" required></textarea>
 											<button type="button" class="prt_btn submitForm"
-											form-type="contact">Send</button>
+											form-type="contact" onclick="sendMail(); reset(); return false">Send</button>
 										</form>
 									</div>
 								</div>
@@ -717,22 +726,6 @@
 	<script type="text/javascript" src="js/circles.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script src="https://kit.fontawesome.com/e7d1f38974.js" crossorigin="anonymous"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script>
-		function sendEmail(){
-			Email.send({
-				SecureToken : "00bc2165-0b33-48a8-87bd-85f83bbf7e24",
-				To : 'me@patrickskinner.tech',
-				From : document.getElementById("email").value,
-				Subject : "New Contact Form Enquiry",
-				Body : "Name: " + document.getElementById("name").value 
-					+ "<br>Email: " + document.getElementById("email").value 
-					+ "<br> Message: " + document.getElementById("message").value 
-			}).then(
-			  message => alert("Message Sent Successfully")
-			);
-		}
-	</script>
 	<!--Main js file End-->
 </body>
 
