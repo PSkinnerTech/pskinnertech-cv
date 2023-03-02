@@ -741,13 +741,7 @@ button:focus {
   margin-top: 20px;
   text-transform: capitalize;
 }
-.prt_profile_details {
-  display: inline-block;
-  width: 100%;
-}
-.prt_profile_details p {
-  margin-bottom: 0px;
-}
+
 /*---------- Contact Page css Start -------*/
 .prt_contact_wrapper {
   background-color: #010101;
@@ -905,15 +899,12 @@ button:focus {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.prt_contact_details_box.details_box1 {
-  background-image: url(https://dummyimage.com/400x267);
+.prt_contact_socials {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 0px 80px;
 }
-.prt_contact_details_box.details_box2 {
-  background-image: url(https://dummyimage.com/400x267);
-}
-.prt_contact_details_box.details_box3 {
-  background-image: url(https://dummyimage.com/400x267);
-}
+
 /*---------- Services css Start -------*/
 .prt_services_wrapper {
   background-color: #010101;
@@ -1443,6 +1434,7 @@ button.prt_btn.prt_loadMore {
 }
 /*---------- Main Wrapper css End -------*/
 /*---------- Responsive css Start -------*/
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .prt_counter_box {
     padding-left: 50px;
@@ -1498,17 +1490,16 @@ button.prt_btn.prt_loadMore {
     border-bottom: 1px solid #202020;
     padding-bottom: 30px;
   }
-
-  .prt_services_slider_box {
-    position: absolute;
-    top: 450px;
-    left: 0;
-    right: 0;
-    margin: 0px auto;
+  .prt_services_slider_wrapper {
+    height: 1430px;
+    display: center;
   }
   .prt_home_wrapper h1 {
     font-size: 90px;
     margin: 0px;
+  }
+  .prt_footer_wrapper {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -1717,11 +1708,79 @@ button.prt_btn.prt_loadMore {
     top: 30%;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 393px) {
   .prt_services_slider_box {
     top: 350px;
   }
+  .prt_logo_wrapper img {
+    position: absolute;
+    left: 15px;
+    width: 75px;
+  }
+  .prt_home_wrapper h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 75px;
+  }
+  .prt_home_wrapper {
+    background-position: -450px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+  }
+  .prt_footer_wrapper {
+    display: none;
+  }
+  .prt_heading {
+    padding-top: 1.5rem;
+    margin-bottom: 50px;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 }
+@media (max-width: 412px) {
+  .prt_services_slider_box {
+    top: 350px;
+  }
+  .prt_logo_wrapper img {
+    position: absolute;
+    left: 15px;
+    width: 75px;
+  }
+  .prt_home_wrapper h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 75px;
+  }
+  .prt_home_wrapper {
+    background-position: -450px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+  }
+  .prt_footer_wrapper {
+    display: none;
+  }
+  .prt_heading {
+    padding-top: 1.5rem;
+    margin-bottom: 50px;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
 @media (max-width: 380px) {
   .row.rowResponsive1 {
     margin-top: 290px;
