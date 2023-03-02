@@ -1435,6 +1435,13 @@ button.prt_btn.prt_loadMore {
 /*---------- Main Wrapper css End -------*/
 /*---------- Responsive css Start -------*/
 
+@media (min-width: 1201px) and (max-width: 1750px) {
+  .prt_home_wrapper h1 {
+    font-size: 130px;
+    margin: 0px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .prt_counter_box {
     padding-left: 50px;
